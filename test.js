@@ -4,7 +4,7 @@ const csv = require('csv-parser');
 
 // Set your AWS credentials and region
 AWS.config.update({
-  accessKeyId: 
+  accessKeyId:  
   secretAccessKey: 
   region: 'us-east-2'
 });
@@ -45,12 +45,11 @@ s3Stream.pipe(csv())
     csvData.push(row);
   })
   .on('end', () => {
-    console.log('CSV data:', csvData);
+    console.log("Read the csv data ----------> ")
+    console.log(csvData.slice(0, 2));
   })
   .on('error', (error) => {
     console.error('Error reading CSV:', error);
   });
 
-
-console.log(csvData.slice(0, 100));
 
