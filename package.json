@@ -1,0 +1,17 @@
+{
+  "name": "s3-sim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1547.0",
+    "csv-parser": "^3.0.0",
+    "iconv-lite": "^0.6.3"
+  }
+}
